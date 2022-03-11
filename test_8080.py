@@ -5,7 +5,7 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello World 8080'
 
-@app.route('/edu', methods=['GET', 'POST'])
+@app.route('/edu')
 def edu():
     return "8080 - edu"
 
