@@ -14,7 +14,7 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello World 8081'
 
-@app.route('/vod')
+@app.route('/vod', methods=['GET', 'POST'])
 def vod():
     return "8081 - vod"
 
