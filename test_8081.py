@@ -14,5 +14,9 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello World 8081'
 
+@app.route('/vod')
+def vod():
+    return "8081 - vod"
+
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=8081, debug=True)
